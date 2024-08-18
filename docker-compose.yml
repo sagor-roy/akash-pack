@@ -1,4 +1,4 @@
-version: '3.9'
+version: '3.8'
 services:
   php:
     build:
@@ -11,8 +11,7 @@ services:
       - ./required_files/default.conf:/etc/apache2/sites-enabled/000-default.conf
       
   db:
-     image: mysql
-     command: --default-authentication-plugin=mysql_native_password
+     image: mysql:latest
      restart: always
      environment:
        MYSQL_ROOT_PASSWORD: plzletme!n123

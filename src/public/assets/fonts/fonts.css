@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'GoogleSans-Regular';
+  src: url('GoogleSans-Regular.eot');
+  src: url('GoogleSans-Regular.eot?#iefix') format('embedded-opentype'),
+       url('GoogleSans-Regular.svg#GoogleSans-Regular') format('svg'),
+       url('GoogleSans-Regular.ttf') format('truetype'),
+       url('GoogleSans-Regular.woff') format('woff'),
+       url('GoogleSans-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GoogleSans-Medium';
+  src: url('GoogleSans-Medium.eot');
+  src: url('GoogleSans-Medium.eot?#iefix') format('embedded-opentype'),
+       url('GoogleSans-Medium.svg#GoogleSans-Medium') format('svg'),
+       url('GoogleSans-Medium.ttf') format('truetype'),
+       url('GoogleSans-Medium.woff') format('woff'),
+       url('GoogleSans-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GoogleSans-Bold';
+  src: url('GoogleSans-Bold.eot');
+  src: url('GoogleSans-Bold.eot?#iefix') format('embedded-opentype'),
+       url('GoogleSans-Bold.svg#GoogleSans-Bold') format('svg'),
+       url('GoogleSans-Bold.ttf') format('truetype'),
+       url('GoogleSans-Bold.woff') format('woff'),
+       url('GoogleSans-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,1 +1,4 @@
-.idea
+src/public/*
+src/site_engine/*
+
+!.gitignore

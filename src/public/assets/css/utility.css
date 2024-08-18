@@ -1,0 +1,872 @@
+.back-to-page{
+  text-align: right;
+  margin-bottom: 25px;
+}
+
+.back-to-page a{
+  position: relative;
+  display: inline-block;
+  background: #009DE1;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 25px;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+.back-to-page a:before{
+  position: absolute;
+  left: -30px;
+  top: 0;
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-right: solid 15px rgb(0, 157, 225);
+  border-bottom: solid 20px transparent;
+  border-top: solid 20px transparent;
+}
+
+.back-to-page a span{
+ 
+}
+
+.btn-toggle {
+  padding: 0;
+  position: relative;
+  border: none;
+  height: 1.5rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+  color: #6b7381;
+  background: #bdc1c8;
+}
+
+.btn-toggle:focus,
+.btn-toggle.focus,
+.btn-toggle:focus.active,
+.btn-toggle.focus.active {
+  outline: none;
+}
+.btn-toggle:before,
+.btn-toggle:after {
+  line-height: 1.5rem;
+  width: 250px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  transition: opacity 0.25s;
+  color: #121219;
+}
+.btn-toggle:before {
+  content: '';
+  left: -4rem;
+}
+.btn-toggle:after {
+  content: 'Show EMI options';
+  right: -250px;
+  opacity: 1;
+}
+.btn-toggle > .handle {
+  position: absolute;
+  top: 0.1875rem;
+  left: 0.1875rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 1.125rem;
+  background: #fff;
+  transition: left 0.25s;
+}
+.btn-toggle.active {
+  transition: background-color 0.25s;
+  background: #009DE1;
+}
+.btn-toggle.active > .handle {
+  left: 1.6875rem;
+  transition: left 0.25s;
+}
+.btn-toggle.active:before {
+  opacity: 0.5;
+}
+.btn-toggle.active:after {
+  opacity: 1;
+}
+#signUpModal{
+	z-index: 9999;
+	background: rgba(0,0,0,0.6);
+}
+
+#signUpModal .modal-content{
+	border: 0px;
+}
+
+#signUpModal .modal-content .modal-header{
+	background: #0091D8
+}
+
+#signUpModal .modal-content .modal-header .modal-title{
+	color: #fff;
+}
+
+#signUpModal .modal-content .modal-header button.close{
+  opacity: 1;
+}
+
+#signUpModal .modal-content .modal-header button.close span{
+  color: #fff
+}
+
+#signUpModal .modal-content .modal-body{}
+
+#signUpModal .modal-content .modal-body .form-check-input{
+	margin-top: 3px
+}
+
+#signUpModal .modal-content .modal-footer{}
+
+#signUpModal .modal-content .modal-footer .btn-primary{
+    color: #fff;
+    background-color: #0091D8;
+    border-color: #0091D8;
+}
+
+#signInModal .modal-content{
+  border: 0px;
+}
+
+#signInModal .modal-content .modal-header{
+  background: #0091D8
+}
+
+#signInModal .modal-content .modal-header .modal-title{
+  color: #fff;
+}
+
+#signInModal .modal-content .modal-header button.close{
+  opacity: 1;
+}
+
+#signInModal .modal-content .modal-header button.close span{
+  color: #fff
+}
+
+#signInModal .modal-content .modal-body{}
+
+#signInModal .modal-content .modal-body h5{
+  mask-type: 25px;
+}
+
+#signInModal .modal-content .modal-body p{
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0091D8;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+#signInModal .modal-content .modal-body .back-login{
+  float: right;
+  display: inline-block;
+}
+
+#signInModal .modal-content .modal-body .back-login a i{
+  color: #0091D8;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+#signInModal .modal-content .modal-body .form-check-input{
+  margin-top: 3px
+}
+
+#signInModal .modal-content .modal-footer{}
+
+#signInModal .modal-content .modal-footer .btn-primary{
+    color: #fff;
+    background-color: #0091D8;
+    border-color: #0091D8;
+}
+
+#appDownloadModal .modal-content {
+  border: 0px;
+}
+
+#appDownloadModal .modal-content .modal-header {
+  background: #0091d8;
+  border-bottom: 0px ;
+}
+
+#appDownloadModal .modal-content .modal-header .modal-title {
+  color: #fff;
+}
+
+#appDownloadModal .modal-content .modal-header button.close {
+  opacity: 1;
+}
+
+#appDownloadModal .modal-content .modal-header button.close span {
+  color: #fff;
+}
+
+#appDownloadModal{
+  margin-top: 40px;
+}
+
+#appDownloadModal .modal-dialog{
+  max-width: 400px;
+}
+
+#appDownloadModal .modal-content .modal-body {
+  background-color: #0091D8;
+}
+
+#appDownloadModal .modal-content .modal-body .or-seperator{
+  position: relative;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+#appDownloadModal .modal-content .modal-body .or-seperator::before{
+  position: absolute;
+  left: 33%;
+  top: 10px;
+  content: '';
+  width: 10%;
+  height: 2px;
+  background-color: #fff;
+}
+
+#appDownloadModal .modal-content .modal-body .or-seperator::after{
+  position: absolute;
+  right: 33%;
+  top: 10px;
+  content: '';
+  width: 10%;
+  height: 2px;
+  background-color: #fff;
+}
+
+#appDownloadModal .modal-content .modal-body .continue-with-web-selfcare-btnBox{
+  text-align: center;
+  margin-top: 15px;
+}
+
+#appDownloadModal .modal-content .modal-body .continue-with-web-selfcare-btnBox .btn.btn-primary{
+  color: #0091d8;
+  background-color: #fff;
+  border-color: #fff;
+  font-weight: 600;
+}
+
+
+#appDownloadModal .modal-content .modal-body p{
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+  color: #fff;
+}
+
+#appDownloadModal .modal-content .modal-body .selfcare-app-link-container{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 15px auto;
+  width: 95%;
+}
+
+#appDownloadModal .modal-content .modal-body .selfcare-app-link-container .selfcare-app-store-links{
+  width: 60%;
+}
+
+#appDownloadModal .modal-content .modal-body .selfcare-app-link-container .selfcare-app-store-links .store-badge{
+  margin-bottom: 8px;
+}
+
+#appDownloadModal .modal-content .modal-body .selfcare-app-link-container .selfcare-app-store-links .store-badge:last-child{
+  margin-bottom: 0;
+}
+
+#appDownloadModal .modal-content .modal-body .selfcare-app-link-container .selfcare-app-store-links .store-badge a{}
+
+#appDownloadModal .modal-content .modal-body .selfcare-app-link-container .selfcare-app-store-links .store-badge a img{
+  width: 180px;
+}
+
+#appDownloadModal .modal-content .modal-body .selfcare-app-link-container .app-qr-code-link{
+  width: 40%;
+  margin-top: 3px
+}
+
+#appDownloadModal .modal-content .modal-body .selfcare-app-link-container .app-qr-code-link img {
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 125px;
+}
+
+
+#signUpModalTNC{
+	z-index: 99999;
+	background: rgba(0,0,0,0.6);
+}
+
+#signUpModalTNC .modal-content{
+	border: 0px;
+}
+
+#signUpModalTNC .modal-content .modal-header{
+	background: #0091D8
+}
+
+#signUpModalTNC .modal-content .modal-header .modal-title{
+	color: #fff;
+}
+
+#signUpModalTNC .modal-content .modal-header button.close{
+  opacity: 1;
+}
+
+#signUpModalTNC .modal-content .modal-header button.close span{
+  color: #fff
+}
+
+#signUpModalTNC .modal-content .modal-body .signUp-tnc{}
+
+#signUpModalTNC .modal-content .modal-body .signUp-tnc ol{}
+
+#signUpModalTNC .modal-content .modal-body .signUp-tnc .regular-text-content ol li{
+	font-family: 'Muli', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 15px;
+}
+
+
+
+#signUpModalTNC .modal-content .modal-footer{}
+
+#signUpModalTNC .modal-content .modal-footer .btn-primary{
+    color: #fff;
+    background-color: #0091D8;
+    border-color: #0091D8;
+}
+
+.page-preloader{
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    z-index:999999;
+    background-color:#009de0;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-image:url('../images/akash-logo-white.svg?v=4.4.4');
+    background-size:140px;
+}
+
+
+
+
+.preloader{
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	z-index:999999;
+	background-color:#009de0;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-image:url('../js/rocket-animation/bg-data/images/img_4.jpg');
+	background-size:cover;
+}
+
+
+.preloader-screen{
+     position: relative;
+     overflow: hidden;
+     width: 100%;
+     height: 100%;
+}
+
+
+.frame {
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+}
+
+.loader {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     left: 0;
+     right: 0;
+     bottom: 0;
+}
+
+.loader h2.text{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	-ms-transform: translate(-50%, -30%) !important;
+	transform: translate(-50%, -30%) !important;
+	color: #fff;
+	font-size: 50px;
+}
+
+
+.loader p{
+	display: block;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	-ms-transform: translate(-50%, -45%) !important;
+	transform: translate(-50%, -45%) !important;
+	font-size: 22px;
+	color: #fff;
+}
+
+
+.rocket-wrapper{
+     position: absolute;
+     left: 0px;
+     right: 0;
+     bottom: -14px;
+     text-align: center;
+     z-index: 2;
+}
+
+.rocket {
+     width: 150px;
+     height: auto;
+}
+
+.ship{
+	/*animation: spaceboots 0.1s infinite step-start;*/
+}
+
+.trail-wrapper {
+    position: absolute;
+    bottom: -30px;
+    left: -22px;
+    width: 12px;
+    height: 44px;
+    transform: none;
+    transform-origin: top center;
+    z-index: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+
+.trail {
+     width: 33px;
+     height: auto;
+     transform: translateZ(0);
+     animation: jet 0.02s ease alternate infinite;
+     transform-origin: top center;
+}
+
+.clouds-wrapper {
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	right: 0;
+	width: 243px;
+	height: 152px;
+	margin: 0 auto;
+}
+
+.cloud {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 2;
+	width: 485px;
+	height: 103px;
+}
+
+.rocket-hanger{
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     width: 500px;
+     margin: 0 auto;
+}
+
+
+
+/*
+.cloud {
+     animation: kaboom 0.4s ease alternate infinite;
+     transform-origin: center center;
+     opacity: 0.9;
+     &:nth-child(odd) {
+          animation: kaboom 0.3s ease alternate infinite;
+     }
+     &:nth-child(1) {
+     animation-delay: 0.1s;
+     }
+     &:nth-child(2) {
+     animation-delay: 0.2s;
+     }
+     &:nth-child(3) {
+          animation-delay: 0.3s;
+     }
+     &:nth-child(4) {
+          animation-delay: 0.4s;
+     }
+     &:nth-child(5) {
+          animation-delay: 0.5s;
+     }
+     &:nth-child(6) {
+          animation-delay: 0.6s;
+     }
+     &:nth-child(7) {
+          animation-delay: 0.7s;
+     }
+
+     &:nth-child(8) {
+          animation-delay: 0.8s;
+     }
+
+     &:nth-child(9) {
+          animation-delay: 0.9s;
+     }
+
+     &:nth-child(10) {
+          animation-delay: 0.10s;
+     }
+
+     &:nth-child(11) {
+          animation-delay: 0.11s;
+     }
+
+     &:nth-child(12) {
+          animation-delay: 0.12s;
+     }
+}
+
+.lower-clouds{
+     animation: kaboom 0.4s ease alternate infinite;
+     transform-origin: center center;
+     opacity: 0.9;
+}*/
+
+
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+@keyframes kaboom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes jet {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes applifyRocketRumble {
+  0% {   margin-left: -1px; margin-bottom: 0; }
+  25% {  margin-left: 1px; margin-bottom: 1px; }
+  50% {  margin-left: 0; margin-bottom: -1px; }
+  75% {  margin-left: 1px; margin-bottom: 0px; }
+  100% { margin-left: 0px; margin-bottom: 1px; }
+}
+
+
+
+
+
+
+  
+@-webkit-keyframes spaceboots {
+    0% { -webkit-transform: translate(0.5px, 0.5px)   }
+    10% { -webkit-transform: translate(-0.5px, -2px)  }
+    20% { -webkit-transform: translate(-0.5px, 0px)  }
+    30% { -webkit-transform: translate(0px, 0.5px) }
+    40% { -webkit-transform: translate(0.5px, -0.5px)  }
+    50% { -webkit-transform: translate(-0.5px, 0.5px)  }
+    60% { -webkit-transform: translate(-0.5px, 0.5px)  }
+    70% { -webkit-transform: translate(0.5px, 0.5px)  }
+    80% { -webkit-transform: translate(-0.5px, -0.5px)  }
+    90% { -webkit-transform: translate(0.5px, 0.5px) }
+    100% { -webkit-transform: translate(0.5px, -0.5px)  }
+}
+
+
+.slick-prev,
+.slick-next{
+     width: 45px;
+     height: 45px;
+     z-index: 1;
+     border-radius: 50%;
+     text-align: center;
+     top: 50%;
+     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+.slick-prev:hover,
+.slick-next:hover{
+}
+
+.slick-prev{
+     left: -45px;
+}
+
+.slick-next{
+     right: -35px;
+}
+
+.slick-prev:before,
+.slick-next:before{
+     font-family:  "Material Design Icons";
+     font-size: 60px;
+     opacity: 1;
+     line-height: 45px;
+     color: #0091D8;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before{
+   color: #0091D8;
+}
+
+.slick-prev:before{
+   content: "\F141";
+}
+
+.slick-next:before{
+   content: "\F142";
+}
+
+.tutorial-carousel .slick-dots{
+   bottom: 15px;
+}
+
+.slick-dots{
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.slick-dots li{
+   width: auto;
+   height: auto;
+}
+
+.slick-dots li button{
+   width: 10px;
+   height: 10px;
+   background: #D4D4D4;
+   border-radius: 50%;
+   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.slick-dots li.slick-active button{
+   width: 15px;
+   height: 15px;
+   background: #0091D8;
+}
+
+.slick-dots li button:before{
+   display: none;
+}
+
+span.form-mark{
+    color: #E20613;
+    font-size: 16px;
+}
+
+/*feedback_form_area*/
+
+.quick-recharge-form{
+  position:fixed;
+  top:15%;
+  right:0;
+  z-index:100;
+  
+}
+
+.quick-recharge-form-show{
+  right:0 !important;
+}
+
+.quick-recharge-form-area{
+  position:relative;
+  display:none;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #009DE1;
+  box-shadow:  0 0 10px rgba(0,0,0,.3)
+}
+
+.quick-recharge-form-inner{
+  /*width:250px;*/
+  padding:15px;
+}
+
+.quick-recharge-form-inner h4{
+  color: #009DE1;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.quick-recharge-form-inner .form-group {
+  margin-bottom: 5px;
+}
+
+.quick-recharge-form-inner .form-group label{
+  color: #4C4C5B;
+  margin-bottom: 2px;
+  font-size: 13px;
+}
+
+.quick-recharge-form-inner .form-group .input-group-text{
+  background-color: #009DE1;
+  border-color: #009DE1;
+  padding: 3px 8px;
+}
+
+.quick-recharge-form-inner .form-group .input-group-text i{
+  color: #fff;
+  font-size: 16px
+}
+
+.quick-recharge-form-inner .form-group input.form-control{
+  box-shadow: none;
+  font-size: 13px;
+}
+
+.quick-recharge-form-inner .form-close{
+  position: relative;
+  cursor: pointer;
+}
+
+
+.quick-recharge-form-inner .form-close i{
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #009DE1;
+}
+
+.quick-recharge-form-inner .btn.btn-blue{
+  border-radius: 25px;
+  padding: 5px 20px;
+  font-size: 14px;
+}
+
+.recharge-float-btn{
+  position: absolute;
+  left: -35px;
+  color: #fff;
+  width: 35px;
+  height: 100px;
+  text-align: right;
+  padding: 12px 8px 0 0;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+  background: #009DE1;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  z-index: 9999;
+  overflow: hidden;
+  -webkit-animation: blink-1 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+          animation: blink-1 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+}
+
+.recharge-float-btn:hover{
+  animation: none;
+}
+
+
+@-webkit-keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: .8;
+  }
+}
+@keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: .8;
+  }
+}
+
+.recharge-float-btn .text{
+    position: absolute;
+    bottom: 40px;
+    transform: rotate(-90deg);
+    left: -20px;
+}
+
+.recharge-float-btn .text p{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+.form-back-btn{
+    float: right;
+    margin-top: 14px;
+    cursor:pointer;
+}
+
+.form-back-btn span {
+    font-size: 16px;
+    color: #0091D8;
+    font-weight: 600;
+}
+
+.form-back-btn span i{
+    font-size: 16px;
+}
+
+.my-account-dropdown{}
+
+.sign-up #resend{
+    float: right;
+    margin-bottom: 5px;
+    font-size: 14px;
+    padding: 3px 10px;
+    opacity: 1;
+}
+
+
